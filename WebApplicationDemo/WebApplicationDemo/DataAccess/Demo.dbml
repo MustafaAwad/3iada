@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Clinic" Class="DemoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(local);Initial Catalog=Clinic;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ClinicConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Delete_Patient" Method="Delete_Patient">
+    <Parameter Name="PatientID" Parameter="patientID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Update_Patient" Method="Update_Patient">
+    <Parameter Name="PatientName" Parameter="patientName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DOB" Parameter="dOB" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="PatientID" Parameter="patientID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Add_Patient" Method="Add_Patient">
+    <Parameter Name="PatientName" Parameter="patientName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="PhoneNo" Parameter="phoneNo" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DOB" Parameter="dOB" Type="System.DateTime" DbType="SmallDateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
